@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui2.AjoutrecController">
+    <stylesheets>
+        <URL value="@listcov.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lbrec" layoutX="245.0" layoutY="55.0" prefHeight="18.0" prefWidth="170.0" text="Blacklist">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblist" layoutX="173.0" layoutY="159.0" text="list">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbnbrec" layoutX="168.0" layoutY="196.0" text="nombre des réclamations" />
+      <TextField fx:id="tflist" layoutX="235.0" layoutY="154.0" prefHeight="30.0" prefWidth="329.0" />
+      <TextField fx:id="tfnnbrec" layoutX="328.0" layoutY="192.0" prefHeight="26.0" prefWidth="123.0" />
+      <Button fx:id="btt" layoutX="271.0" layoutY="320.0" mnemonicParsing="false" onAction="#ajoutblacklist" text="Envoyer" />
+      <Label fx:id="lbpassager" layoutX="236.0" layoutY="235.0" text="id passager" />
+      <TextField fx:id="tfpassager" layoutX="328.0" layoutY="231.0" prefHeight="26.0" prefWidth="123.0" />
+      <Label fx:id="lbchauffeur" layoutX="239.0" layoutY="271.0" text="id chauffeur" />
+      <TextField fx:id="tfchauffeur" layoutX="328.0" layoutY="267.0" prefHeight="26.0" prefWidth="123.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui2.UpdateblacklistController">
+   <children>
+      <Label fx:id="lbrec" layoutX="265.0" layoutY="75.0" prefHeight="18.0" prefWidth="170.0" text="Blacklist">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdes" layoutX="102.0" layoutY="189.0" prefHeight="19.0" prefWidth="61.0" text="list">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdate" layoutX="83.0" layoutY="225.0" text="nombre de réclamation" />
+      <TextField fx:id="tflist" layoutX="225.0" layoutY="174.0" prefHeight="30.0" prefWidth="329.0" />
+      <TextField fx:id="tfnbrec" layoutX="225.0" layoutY="208.0" prefHeight="26.0" prefWidth="123.0" />
+      <Button fx:id="btt" layoutX="291.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateBlaclist" text="update" />
+      <Label fx:id="lbpassager" layoutX="104.0" layoutY="256.0" text="id passager" />
+      <TextField fx:id="tfpassager" layoutX="225.0" layoutY="251.0" prefHeight="26.0" prefWidth="123.0" />
+      <Label fx:id="lbchauffeur" layoutX="104.0" layoutY="292.0" text="id chauffeur" />
+      <TextField fx:id="tfchauffeur" layoutX="225.0" layoutY="287.0" prefHeight="26.0" prefWidth="123.0" />
+      <Label layoutX="117.0" layoutY="134.0" text="id blacklist" />
+      <TextField fx:id="tfidb" layoutX="246.0" layoutY="130.0" />
+   </children>
+</AnchorPane>
