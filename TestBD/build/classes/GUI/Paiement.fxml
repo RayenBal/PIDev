@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PaiementController">
+   <children>
+      <TextField fx:id="txtid" layoutX="436.0" layoutY="35.0" />
+      <TextField fx:id="txtM" layoutX="436.0" layoutY="81.0" />
+      <TextField fx:id="txtD" layoutX="436.0" layoutY="130.0" />
+      <TextField fx:id="txtDate" layoutX="436.0" layoutY="169.0" />
+      <TextField fx:id="txtValide" layoutX="436.0" layoutY="208.0" />
+      <Button fx:id="btnA" layoutX="546.0" layoutY="271.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+      
+      <TableView fx:id="TV" layoutY="3.0" prefHeight="94.0" prefWidth="54.0">
+        <columns>
+          <TableColumn fx:id="affid" prefWidth="45.60003662109375" text="id" />
+          <TableColumn fx:id="affm" prefWidth="71.20001220703125" text="montant" />
+            <TableColumn fx:id="affd" prefWidth="92.0" text="Description" />
+            <TableColumn fx:id="affda" prefWidth="104.79998779296875" text="Date" />
+            <TableColumn fx:id="affpai" prefWidth="113.5999755859375" text="paiementValide" />
+        </columns>
+      </TableView>
+      <Button fx:id="Disp" layoutX="511.0" layoutY="332.0" mnemonicParsing="false" onAction="#Display" text="Display" />
+      <Button fx:id="btn3" layoutX="484.0" layoutY="296.0" mnemonicParsing="false" onAction="#Update" text="Update" />
+      <ListView fx:id="LV" layoutX="57.0" layoutY="22.0" prefHeight="338.0" prefWidth="366.0" />
+      <Button fx:id="btnD" layoutX="436.0" layoutY="345.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+      <Button fx:id="btnF" layoutX="424.0" layoutY="271.0" mnemonicParsing="false" onAction="#FindByID" text="FindByID" />
+      <TextField fx:id="M_id" layoutX="437.0" layoutY="245.0" />
+   </children>
+</AnchorPane>

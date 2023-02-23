@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/FXMLController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/Display.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindByIdPM.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/NewFXMain.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/AddPMController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/AddPM.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/Update.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI/Paiement.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/UpdatePM.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/Supprime.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindByIdPMController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Utils/DataSource.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindByID.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/UpdatePMController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Entite/Paiement.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/AddPM.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindByIdPM.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI2/FXML.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/Update.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI/NewFXMain.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Utils/Main.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/UpdatePM.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/UpdateGUI/UpdateController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/SupprimePM.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/SupprimePMController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/DisplayPM.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Entite/PaymentMethod.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/DisplayController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindById.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/SupprimePM.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Services/ServicePaymentMeth.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/DisplayPM.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/FindByidGUI/FindByIdController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/Display.fxml</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/GUI/PaiementController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Services/ServicePaiement.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/DisplayGUI/DisplayPMController.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/Test/Main.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/Supprime.java</file>
+            <file>file:/C:/Users/INFOTEC/Documents/NetBeansProjects/TestBD/src/SupprimeGUI/SupprimeController.java</file>
+        </group>
+    </open-files>
+</project-private>
