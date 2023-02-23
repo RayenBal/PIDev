@@ -1,2 +1,0 @@
-# PIDev
-TIC-TAC-GO
