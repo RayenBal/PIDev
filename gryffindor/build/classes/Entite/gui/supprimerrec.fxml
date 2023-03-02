@@ -2,13 +2,35 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui.SupprimerrecController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui.SupprimerrecController">
    <children>
-      <TextField fx:id="tfid" layoutX="219.0" layoutY="198.0" />
-      <Label fx:id="lbid" layoutX="96.0" layoutY="202.0" prefHeight="17.0" prefWidth="84.0" text="ID reclamation" />
-      <Button fx:id="btsup" layoutX="228.0" layoutY="304.0" mnemonicParsing="false" onAction="#Supprmierblack" prefHeight="25.0" prefWidth="132.0" text="Supprimer" />
+      <TextField fx:id="tfnomr" layoutX="261.0" layoutY="176.0" />
+      <Label fx:id="lbnomr" layoutX="177.0" layoutY="180.0" prefHeight="17.0" prefWidth="84.0" text="nom" textFill="#efe5e5">
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font></Label>
+      <Button fx:id="btsup" layoutX="253.0" layoutY="254.0" mnemonicParsing="false" onAction="#SupprmierReclamation" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="Supprimer" />
+      <Label layoutX="185.0" layoutY="111.0" text="supprimer votre réclamation" textFill="#f7eaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="-13.0" opacity="0.19" prefHeight="424.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="462.0" opacity="0.19" prefHeight="411.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
    </children>
 </AnchorPane>

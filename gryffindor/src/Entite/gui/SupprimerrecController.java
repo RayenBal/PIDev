@@ -28,14 +28,16 @@ import javax.swing.JOptionPane;
 public class SupprimerrecController implements Initializable {
 
     @FXML
-    private TextField tfid;
+    private TextField tfnomr;
     @FXML
-    private Label lbid;
+    private Label lbnomr;
     @FXML
     private Button btsup;
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -43,13 +45,13 @@ public class SupprimerrecController implements Initializable {
     }    
 
     @FXML
-    private void SupprmierChauffeur(ActionEvent event) {
+    private void SupprmierReclamation(ActionEvent event) {
         try {
-    // Vérifier si l'utilisateur a entré un entier valide pour l'ID de réclamation
-    if (tfid.getText().matches("\\d+")) {
-        int idrec = Integer.parseInt(tfid.getText());
+    // Vérifier si l'utilisateur a entré une chaine de caracrtere
+    if (tfnomr.getText().matches("^[a-zA-Z]+$")) {
+        String nomr = tfnomr.getText();
 
-        Reclamation c = new Reclamation(idrec, "", "", 0, 0);
+        Reclamation c = new Reclamation("", "", nomr, 0);
         // Supprimer la réclamation de la base de données
         ServiceReclamation sr = new ServiceReclamation();
         sr.supprime(c);

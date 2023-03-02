@@ -15,10 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-/**
- *
- * @author Rayen
- */
+
 public class supprimerrec extends Application {
     
    @Override

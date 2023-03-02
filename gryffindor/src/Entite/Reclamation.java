@@ -5,27 +5,38 @@
  */
 package Entite;
 
+import java.sql.Date;
+
 /**
  *
  * 
  */
 public class Reclamation {
-    private int id_reclamation,idp,idc;
-    private String description,date_creation;
-
-    public Reclamation(String description, String date_creation, int idp, int idc) {
+    private int id_reclamation,id_compte ;
+    private String description,nomr;
+    private String date_creation;
+    
+ 
+    
+     public Reclamation(String description, String date_creation,String  nomr) {
         this.description = description;
         this.date_creation = date_creation;
-        this.idp = idp;
-        this.idc = idc;
+        this.nomr = nomr;
     }
 
-    public Reclamation(int id_reclamation , String description, String date_creation, int idp, int idc) {
-        this.id_reclamation  = id_reclamation ;
+    public Reclamation(String description, String date_creation,String  nomr,int id_compte) {
         this.description = description;
         this.date_creation = date_creation;
-        this.idp = idp;
-        this.idc = idc;
+        this.nomr = nomr;
+        this.id_compte = id_compte;
+    }
+
+    public Reclamation(int id_reclamation , String description, String date_creation,String  nomr, int id_compte) {
+        this.id_reclamation  = id_reclamation ;
+        this.description = description;
+       this.date_creation = date_creation;
+        this.nomr = nomr;
+        this.id_compte = id_compte;
     }
 
     public Reclamation(int idreclamation, String description, String date) {
@@ -56,24 +67,25 @@ public class Reclamation {
     public void setDate_creation(String date_creation) {
         this.date_creation = date_creation;
     }
-    public int getIdp() {
-        return idp ;
+     public String getNomr() {
+        return nomr;
     }
 
-    public void setIdp(int idp ) {
-        this.idp  = idp ;
+    public void setNomr(String nomr) {
+        this.nomr = nomr;
     }
-    public int getIdc() {
-        return idc ;
+  
+    public int getId_compte() {
+        return id_compte ;
     }
 
-    public void setIdc(int idc ) {
-        this.idc  = idc ;
+    public void setId_compte(int id_compte ) {
+        this.id_compte  = id_compte ;
     }
 
     @Override
     public String toString() {
-        return "Compte{" + "id_reclamation =" + id_reclamation  + ", description=" + description + ", date_creation=" + date_creation +"id_passager =" + idp  +"id_chauffeur =" + idc  + '}';
+        return "Réclamations{" + " description=" + description + ", date_creation=" + date_creation +", effectué sur=" + nomr+"id_utilisateur =" + id_compte  + '}';
     }
 
     public String getTitle() {

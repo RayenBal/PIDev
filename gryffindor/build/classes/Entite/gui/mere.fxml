@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui.AfficherrecController">
+   <children>
+      <Label layoutX="232.0" layoutY="82.0" prefHeight="27.0" prefWidth="255.0" text="Réclamation" textFill="#f7eaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="tabpane" layoutX="44.0" layoutY="120.0" prefHeight="237.0" prefWidth="500.0" style="-fx-background-color: #04D9D9;">
+         <tabs>
+            <Tab fx:id="aj" text="Ajouter">
+               <content>
+                  <StackPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="mod" text="modifier">
+               <content>
+                  <StackPane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="supp" text="supprimer">
+               <content>
+                  <StackPane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

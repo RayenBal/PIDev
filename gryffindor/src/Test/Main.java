@@ -6,8 +6,6 @@
 package Test;
 
 import Entite.Reclamation;
-import Entite.Blacklist;
-import Services.ServiceBlacklist;
 
 
 import Services.ServiceReclamation;
@@ -31,12 +29,12 @@ public class Main {
        // Chauffeur c1 = new Chauffeur(1,"Benn ", "ssss", "14253","5 rue elfell","aaaa@yahoo.com");
 
         ServiceReclamation ser = new ServiceReclamation();
-        ServiceBlacklist serB = new ServiceBlacklist();
+       // ServiceBlacklist serB = new ServiceBlacklist();
 
 
 
-         Reclamation r2 = new Reclamation("rayennnnnnnnnnnnn", "25/02/2023",13,14);
-         Blacklist b = new Blacklist ("hrghkjrhgkt",10,12,13);
+         Reclamation r2 = new Reclamation("rayennnnnnnnnnnnn", "25/02/2023","rayen",13);
+        // Blacklist b = new Blacklist ("hrghkjrhgkt",10,12,13);
                 try {
             ser.ajouter(r2);
         } catch (SQLException ex) {

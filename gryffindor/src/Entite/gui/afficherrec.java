@@ -26,7 +26,7 @@ import javafx.stage.Stage;
 public class afficherrec extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception {
         
     
         try {
