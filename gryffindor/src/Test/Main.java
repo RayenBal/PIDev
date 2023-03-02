@@ -6,9 +6,7 @@
 package Test;
 
 import Entite.Compte;
-import Entite.Historique;
 import Services.ServiceCompte;
-import Services.ServiceHistorique;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
@@ -29,20 +27,20 @@ public class Main {
        // Chauffeur c1 = new Chauffeur(1,"Benn ", "ssss", "14253","5 rue elfell","aaaa@yahoo.com");
 
         ServiceCompte ser = new ServiceCompte();
-        ServiceHistorique serH = new ServiceHistorique();
+        //ServiceHistorique serH = new ServiceHistorique();
        /* try {
             ser.ajouter(c1);
         } catch (SQLException ex) {
             System.out.println(ex);
         }*/
 
-         Historique h2 = new Historique(21, "manourtiiiiiiiiiii", "Dhraief", "aaaaaaaaaaaaaaaaa");
-         Compte c2 = new Compte(16,"chauf", "Rayen", "mohamedrayen.dhraief@esprit.tn", "rayen12",21);
-          try {
+        // Historique h2 = new Historique(21, "manourtiiiiiiiiiii", "Dhraief", "aaaaaaaaaaaaaaaaa");
+         Compte c2 = new Compte(16,"chauf", "Rayen", "mohamedrayen.dhraief@esprit.tn", "rayen12");
+       /*   try {
             serH.ajouter(h2);
         } catch (SQLException ex) {
             System.out.println(ex);
-        }
+        }*/
          
        /* try {
             ser.ajouter(c2);
@@ -63,7 +61,7 @@ public class Main {
         }catch (SQLException ex) {
             System.out.println(ex);}*/
         
-      try{
+      /*try{
                   ser.afficher(c2);
         }catch (SQLException ex) {
             System.out.println(ex);}

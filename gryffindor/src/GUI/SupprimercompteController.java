@@ -26,12 +26,14 @@ import javax.swing.JOptionPane;
  */
 public class SupprimercompteController implements Initializable {
     @FXML
-    private TextField tfcomp;
+    private TextField tfemail;
     @FXML
     private Button buttonSupp;
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -39,21 +41,18 @@ public class SupprimercompteController implements Initializable {
     }    
      @FXML
     private void Supprmiercompte(ActionEvent event) {
-        
-      
  try {
+     
     // Vérifier si l'utilisateur a entré un entier valide pour l'ID de compte
-    if (tfcomp.getText().matches("\\d+")) {
-       int id_compte =Integer.parseInt(tfcomp.getText());
-
-         Compte c = new Compte(id_compte ,"","" ,"","",0);
+    if (tfemail.getText().matches("[^@]+@[^@]+\\.[^@]+")) {
+       String email = tfemail.getText();
+         Compte c = new Compte("","",email,"");
         // Supprimer le compte de la base de données
         ServiceCompte sc= new ServiceCompte();
         sc.supprime(c);
         JOptionPane.showMessageDialog(null, "Compte supprimer de la database.");
     } else {
-        // Afficher un message d'erreur si l'utilisateur n'a pas entré un entier valide
-        JOptionPane.showMessageDialog(null, "Veuillez entrer un nombre entier et positif pour l'ID de Compte.");
+        JOptionPane.showMessageDialog(null, "Invalid email address. Please enter a valid email address.");
     }
 } catch (SQLException ex) {
     Logger.getLogger(SupprimercompteController.class.getName()).log(Level.SEVERE, null, ex);
@@ -64,7 +63,7 @@ public class SupprimercompteController implements Initializable {
 }
 
        /* try {
-            int id_compte =Integer.parseInt(tfcomp.getText());
+            int id_compte =Integer.parseInt(tfemail.getText());
             
             Compte c = new Compte(id_compte ,"","" ,"","",0);
             // Delete the Compte from the database

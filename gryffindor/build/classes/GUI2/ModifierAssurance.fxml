@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI2.ModifierAssuranceController">
+   <children>
+      <Label fx:id="lbsign" layoutX="170.0" layoutY="22.0" text="Modifier Assurance" textFill="#f49c49">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbnom" layoutX="151.0" layoutY="227.0" prefHeight="18.0" prefWidth="96.0" text="valable jussqu'à" textFill="#F27405" />
+      <TextField fx:id="tfimma" layoutX="256.0" layoutY="139.0" style="-fx-background-color: white;" />
+      <Label fx:id="lbemail" layoutX="151.0" layoutY="141.0" prefHeight="18.0" prefWidth="96.0" text="immatriculation" textFill="#F27405" />
+      <Button fx:id="bttupdate" layoutX="304.0" layoutY="329.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <SplitPane layoutY="1.0" opacity="0.23" prefHeight="400.0" prefWidth="118.0" />
+      <DatePicker fx:id="datepicker" layoutX="244.0" layoutY="224.0" />
+   </children>
+</AnchorPane>

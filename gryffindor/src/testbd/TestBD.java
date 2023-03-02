@@ -6,9 +6,7 @@
 package testbd;
 
 import Entite.Compte;
-import Entite.Historique;
 import Services.ServiceCompte;
-import Services.ServiceHistorique;
 import java.sql.*;
 import java.util.List;
 
@@ -31,8 +29,8 @@ public class TestBD {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
         };
-        ServiceHistorique serH = new ServiceHistorique();
-        Historique h2 = new Historique(20, "manourtiiiiiiiiiii", "Dhraief", "aaaaaaaaaaaaaaaaa");
+        //ServiceHistorique serH = new ServiceHistorique();
+        //Historique h2 = new Historique(20, "manourtiiiiiiiiiii", "Dhraief", "aaaaaaaaaaaaaaaaa");
         //Compte c2 = new Compte(10,"chauffeur","MANAR", "rrrrr@esprit.tn", "AAAAAAAA",h2);
         // TODO code application logic here
         try {

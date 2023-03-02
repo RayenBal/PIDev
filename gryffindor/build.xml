@@ -10,6 +10,55 @@
 <project name="gryffindor" default="default" basedir=".">
     <description>Builds, tests, and runs the project gryffindor.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <dependency>
+   <groupId>com.sun.mail</groupId>
+   <artifactId>javax.mail</artifactId>
+   <version>1.6.2</version>
+</dependency>
+<!--<dependency>
+    <groupId>com.auth0</groupId>
+    <artifactId>auth0</artifactId>
+    <version>2.0.0</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.14.2</version>
+</dependency>
+<dependency>
+    <groupId>com.squareup.okhttp3</groupId>
+    <artifactId>logging-interceptor</artifactId>
+    <version>4.9.3</version>
+</dependency>
+<dependency>
+    <groupId>org.jetbrains.kotlin</groupId>
+    <artifactId>kotlin-stdlib-jdk8</artifactId>
+    <version>1.5.21</version>
+</dependency>
+<dependency>
+    <groupId>org.jetbrains.kotlin</groupId>
+    <artifactId>kotlin-stdlib</artifactId>
+    <version>1.5.21</version>
+</dependency>
+dependencies {
+    compile files('C:\Users\Rayen\Desktop\jackson\okhttp-3.9.0.jar')
+}
+
+<path id="auth0.path">
+    <fileset dir="C:\Users\Rayen\Desktop">
+        <include name="auth0-2.0.0.jar"/>
+    </fileset>
+</path>
+
+<target name="build">
+    <javac srcdir="C:\Users\Rayen\Desktop\gryffindor\src" destdir="C:\Users\Rayen\Desktop\gryffindor\build">
+        <classpath>
+            <path refid="auth0.path"/>
+        </classpath>
+    </javac> -->
+    <!-- Ajoutez d'autres tâches de construction ici si nécessaire -->
+    
     <!--
 
     There exist several targets which are by default empty and which can be 

@@ -142,9 +142,6 @@ import static org.omg.CORBA.ObjectHelper.type;
 
 public class ModifiercompteController implements Initializable {
 
-   @FXML
-    private TextField tfcomp;
-
 
     @FXML
     private TextField tfemail;
@@ -183,12 +180,9 @@ public class ModifiercompteController implements Initializable {
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tictacgo", "root", "");
 
     // get the updated data from the input fields
-    int idc = -1;
-    if (!tfcomp.getText().isEmpty()) {
-        idc = Integer.parseInt(tfcomp.getText());
-    }
-    if (idc < 0) {
-        JOptionPane.showMessageDialog(null, "Invalid input for idc. Please enter a positive integer.");
+     String email = tfemail.getText();
+    if (!email.matches("[^@]+@[^@]+\\.[^@]+")) {
+        JOptionPane.showMessageDialog(null, "Invalid email address. Please enter a valid email address.");
         return;
     }
 
@@ -200,11 +194,6 @@ public class ModifiercompteController implements Initializable {
         return;
     }
 
-    String email = tfemail.getText();
-    if (!email.matches("[^@]+@[^@]+\\.[^@]+")) {
-        JOptionPane.showMessageDialog(null, "Invalid email address. Please enter a valid email address.");
-        return;
-    }
 
     String mp = tfmp.getText();
    // Vérifier que le mot de passe contient au moins 8 caractères et au moins une lettre et un chiffre
@@ -213,26 +202,17 @@ public class ModifiercompteController implements Initializable {
         return;
     }
 
-    int idh = -1;
-    if (!tfhist.getText().isEmpty()) {
-        idh = Integer.parseInt(tfhist.getText());
-    }
-    if (idh < 0) {
-        JOptionPane.showMessageDialog(null, "Invalid input for idh. Please enter a positive integer.");
-        return;
-    }
 
     // create a new Compte object with the updated data
-    Compte c = new Compte(idc, type, nom, email, mp, idh);
+    Compte c = new Compte( type, nom, email, mp);
     ServiceCompte sc = new ServiceCompte();
     sc.update(c);
 
     // clear the input fields
-    tfcomp.clear();
     tfnom.clear();
     tfemail.clear();
     tfmp.clear();
-    tfhist.clear();
+    //tfhist.clear();
 
     JOptionPane.showMessageDialog(null, "Compte updated in the database.");
 } catch (SQLException e) {

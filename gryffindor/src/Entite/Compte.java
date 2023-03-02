@@ -10,25 +10,23 @@ package Entite;
  * 
  */
 public class Compte {
-    private int id_compte,id_historique;
+    private int id_compte;
     private String nom,email,mot_de_passe,type_user;
 
-    public Compte(String type_user, String nom, String email,String mot_de_passe,int id_historique) {
+    public Compte(String type_user, String nom, String email,String mot_de_passe) {
         
         this.type_user = type_user;
         this.nom = nom;
         this.email = email;
         this.mot_de_passe = mot_de_passe;
-        this.id_historique = id_historique;
     }
 
-    public Compte(int id_compte,String type_user, String nom, String email, String mot_de_passe,int id_historique) {
+    public Compte(int id_compte,String type_user, String nom, String email, String mot_de_passe) {
         this.id_compte = id_compte;
         this.type_user = type_user;
         this.nom = nom;
         this.email = email;
         this.mot_de_passe = mot_de_passe;
-        this.id_historique = id_historique;
     }
 
     public int getIdc() {
@@ -38,13 +36,7 @@ public class Compte {
     public void setIdc(int id_compte) {
         this.id_compte = id_compte;
     }
-    public int getId_historique() {
-        return id_historique;
-    }
-
-    public void setId_historique(int id_historique) {
-        this.id_historique = id_historique;
-    }
+ 
     public String getNom() {
         return nom;
     }
@@ -77,7 +69,7 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "Compte{" + "id_compte= " + id_compte +", id_historiques= " + id_historique +", type_user= " + type_user + ", nom= " + nom + ", email= " + email + ", mot_de_passe=" + mot_de_passe + '}';
+        return " type_user   " + type_user + ", nom   " + nom + ", email   " + email + ", mot_de_passe   " + mot_de_passe ;
     }
     
     

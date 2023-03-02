@@ -1,122 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/*
-
-package GUI;
-import Entite.Compte;
-import java.net.URL;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-//import com.gluonhq.charm.glisten.control.TextField;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import Services.ServiceCompte;
-import GUI.AjoutcompteController;
-
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
-
-/**
- * FXML Controller class
- *
- * @author Rayen
- */
-/*
-public class AjoutcompteController implements Initializable {
-   
-    @FXML
-    private Button bttsign;
-
-    @FXML
-    private Label lbemail;
-
-    @FXML
-    private Label lbmp;
-
-    @FXML
-    private Label lbnom;
-
-    @FXML
-    private Label lbsign;
-
-    @FXML
-    private Label lbtype;
-
-    private RadioButton rbchauffeur;
-
-    private RadioButton rbpassager;
-
-    @FXML
-    private TextField tfemail;
-
-    @FXML
-    private TextField tfhist;
-
-    @FXML
-    private TextField tfmp;
-
-    @FXML
-    private TextField tfnom;
-    @FXML
-    private TextField tfuser;
-    
-
-    /**
-     * Initializes the controller class.
-     */
-   /* @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    } 
-     @FXML
-    private void Save(ActionEvent event) {
-        try {
-            String passager = rbpassager.getText();
-            String chauffeur = rbchauffeur.getText();
-           
-            String nom = tfnom.getText();
-            String email= tfemail.getText();
-            String mp = tfmp.getText() ;
-            //String hist =tfhist.getText() ;
-            int hist=Integer.parseInt(tfhist.getText());
-            
-            Compte c= new Compte(passager,nom,email,mp,hist);
-            ServiceCompte sc = new ServiceCompte() ;
-            sc.ajouter(c);
-            
-             tfnom.clear();
-            tfemail.clear();
-            tfmp.clear();
-            tfhist.clear();
-            tfuser.clear();
-            
-            
-            
-            
-        } catch (SQLException e) {
-           System.out.println("Error: " + e.getMessage());
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a number.");
-        }
-        }
-        
-        
-    }
-    */
-    
 
 package GUI;
 
@@ -142,8 +23,6 @@ public class AjoutcompteController implements Initializable {
     @FXML
     private TextField tfemail;
 
-    @FXML
-    private TextField tfhist;
 
     @FXML
     private TextField tfmp;
@@ -171,8 +50,6 @@ public class AjoutcompteController implements Initializable {
     private Button bttsign;
     @FXML
     private RadioButton chauf;
-    @FXML
-    private TextField idcontrole;
      
     @FXML
     private void Save(ActionEvent event) {
@@ -181,13 +58,6 @@ public class AjoutcompteController implements Initializable {
     String nom = tfnom.getText();
     String email = tfemail.getText();
     String mp = tfmp.getText();
-    String idText = tfhist.getText();
-
-    // Vérifier que l'identifiant est un nombre entier positif
-    if (!idText.matches("\\d+")) {
-        throw new NumberFormatException();
-    }
-    int id = Integer.parseInt(idText);
 
     // Vérifier que le nom ne contient que des lettres et des espaces
     if (!nom.matches("[a-zA-Z ]+")) {
@@ -207,14 +77,13 @@ public class AjoutcompteController implements Initializable {
         return;
     }
 
-    Compte c = new Compte(type, nom, email, mp, id);
+    Compte c = new Compte(type, nom, email, mp);
     ServiceCompte sc = new ServiceCompte();
     sc.ajouter(c);
 
     tfnom.clear();
     tfemail.clear();
     tfmp.clear();
-    tfhist.clear();
     JOptionPane.showMessageDialog(null, "Compte ajouté dans la base de données.", "Confirmation", JOptionPane.INFORMATION_MESSAGE);
 } catch (SQLException e) {
     JOptionPane.showMessageDialog(null, "Erreur : " + e.getMessage(), "Erreur", JOptionPane.ERROR_MESSAGE);
@@ -231,30 +100,32 @@ public class AjoutcompteController implements Initializable {
     }
 
 }
- /*try {
-            
-            String type = pass.isSelected() ? "passager" : "chauffeur";
-          
-            String nom = tfnom.getText();
-            String email = tfemail.getText();
-            String mp = tfmp.getText();
-            
-            //int hist = Integer.parseInt(tfhist.getText());
-            int id = Integer.parseInt(tfhist.getText());
-         
-           // Compte c = new Compte(99 ,"hello", nom, email, mp, e);
-           Compte c = new Compte(type, nom, email, mp, id);
-            ServiceCompte sc = new ServiceCompte();
-            sc.ajouter(c);
-
-            tfnom.clear();
-            tfemail.clear();
-            tfmp.clear();
-            tfhist.clear();
-           // tfuser.clear();
-         System.out.println("Compte ajouter dans database.");
-        } catch (SQLException e) {
-            System.out.println("Error: " + e.getMessage());
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a number.");
-        }*/
+ /* String type = pass.isSelected() ? "passager" : "chauffeur";
+    String nom = tfnom.getText();
+    String email = tfemail.getText();
+    String mp = tfmp.getText();
+    String idText = tfhist.getText();
+     int id = Integer.parseInt(idText);
+        try {
+    CreatedUser createdUser = auth.createUser(type, nom,email, mp)
+        .setConnection("Username-Password-Authentication")
+        .execute();
+    // Create the account in the local database
+    Compte c = new Compte(type, nom, email, mp, id);
+    ServiceCompte sc = new ServiceCompte();
+    sc.ajouter(c);
+    tfnom.clear();
+    tfemail.clear();
+    tfmp.clear();
+    tfhist.clear();
+    JOptionPane.showMessageDialog(null, "Compte ajouté dans la base de données.", "Confirmation", JOptionPane.INFORMATION_MESSAGE);
+}catch (SQLException e) {
+    // Handle any errors from the local database
+    JOptionPane.showMessageDialog(null, "Erreur : " + e.getMessage(), "Erreur", JOptionPane.ERROR_MESSAGE);
+}
+        // Handle any errors from the Auth0 API
+         catch (NumberFormatException e) {
+    JOptionPane.showMessageDialog(null, "L'identifiant doit être un nombre entier positif.", "Erreur de saisie", JOptionPane.ERROR_MESSAGE);
+} catch (Exception e) {
+    JOptionPane.showMessageDialog(null, "Erreur : " + e.getMessage(), "Erreur", JOptionPane.ERROR_MESSAGE);
+}*/
