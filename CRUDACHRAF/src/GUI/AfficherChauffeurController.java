@@ -28,7 +28,6 @@ public class AfficherChauffeurController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
     }
 
-    @FXML
     private void AfficherChauffeur(ActionEvent event) {
         try {
             ServiceChauffeur sc = new ServiceChauffeur();
@@ -42,7 +41,6 @@ public class AfficherChauffeurController implements Initializable {
         }
     }
 
-    @FXML
     private void retour(ActionEvent event) {
         Stage stage = (Stage) buttonretour.getScene().getWindow();
         stage.close();
