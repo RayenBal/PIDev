@@ -1,7 +1,6 @@
-package GUI2; 
+package GUI; 
 
 import javafx.application.Application;
-import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,22 +8,22 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class MainWindow2 extends Application {
+public class menu extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Infotraffic Management System");
+        primaryStage.setTitle("Chauffeur Management System");
 
         // Create the buttons for the menu
-        Button ajouterBtn = new Button("Ajouter infotraffic");
-        Button updateBtn = new Button("Update infotraffic");
-        Button supprimerBtn = new Button("Supprimer infotraffic");
-        Button afficherBtn = new Button("Afficher infotraffic");
+        Button ajouterBtn = new Button("Ajouter Chauffeur");
+        Button updateBtn = new Button("Update Chauffeur");
+        Button supprimerBtn = new Button("Supprimer Chauffeur");
+        Button afficherBtn = new Button("Afficher Chauffeur");
 
         // Set the action for each button
         ajouterBtn.setOnAction(event -> {
             try {
-                Parent ajouterChauffeur = FXMLLoader.load(getClass().getResource("AjouterInfotraffic.fxml"));
+                Parent ajouterChauffeur = FXMLLoader.load(getClass().getResource("ajouterChauffeur.fxml"));
                 Scene ajouterScene = new Scene(ajouterChauffeur);
                 primaryStage.setScene(ajouterScene);
             } catch (Exception e) {
@@ -34,7 +33,7 @@ public class MainWindow2 extends Application {
 
         updateBtn.setOnAction(event -> {
             try {
-                Parent updateChauffeur = FXMLLoader.load(getClass().getResource("UpdateInfotrafic.fxml"));
+                Parent updateChauffeur = FXMLLoader.load(getClass().getResource("updateChauffeur.fxml"));
                 Scene updateScene = new Scene(updateChauffeur);
                 primaryStage.setScene(updateScene);
             } catch (Exception e) {
@@ -44,7 +43,7 @@ public class MainWindow2 extends Application {
 
         supprimerBtn.setOnAction(event -> {
             try {
-                Parent supprimerChauffeur = FXMLLoader.load(getClass().getResource("SupprimerInfotraffic.fxml"));
+                Parent supprimerChauffeur = FXMLLoader.load(getClass().getResource("SupprimerChauffeur.fxml"));
                 Scene supprimerScene = new Scene(supprimerChauffeur);
                 primaryStage.setScene(supprimerScene);
             } catch (Exception e) {
@@ -54,7 +53,7 @@ public class MainWindow2 extends Application {
 
         afficherBtn.setOnAction(event -> {
             try {
-                Parent afficherChauffeur = FXMLLoader.load(getClass().getResource("AfficherInfotrafic.fxml"));
+                Parent afficherChauffeur = FXMLLoader.load(getClass().getResource("AfficherChauffeur.fxml"));
                 Scene afficherScene = new Scene(afficherChauffeur);
                 primaryStage.setScene(afficherScene);
             } catch (Exception e) {
