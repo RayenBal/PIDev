@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="600.0" style="-fx-background-color: Orange;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListcovController">
+    <stylesheets>
+        <URL value="@listcov.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btnajouter" defaultButton="true" layoutX="30.0" layoutY="380.0" mnemonicParsing="false" onAction="#savecovoiturage" prefHeight="37.0" prefWidth="269.0" text="Enregistrer Covoiturage" textFill="#0f0f0f" textOverrun="CLIP">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Button>
+      <Label layoutX="37.0" layoutY="42.0" text="Depart">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="88.0" text="Destination">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="134.0" text="Places Disponibles">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="184.0" text="Prix">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="226.0" text="Date">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <TextField fx:id="cov_depart" layoutX="238.0" layoutY="38.0" prefHeight="26.0" prefWidth="178.0" promptText="Vous Partez d'ou?" />
+      <TextField fx:id="cov_destination" layoutX="238.0" layoutY="84.0" prefHeight="26.0" prefWidth="178.0" promptText="Vous partez ou ? " />
+      <TextField fx:id="cov_prix" layoutX="238.0" layoutY="180.0" prefHeight="26.0" prefWidth="178.0" promptText="Ca coute combien ?" />
+      <TextField fx:id="cov_nbr" layoutX="238.0" layoutY="130.0" prefHeight="26.0" prefWidth="178.0" promptText="Combien de places avez vous ?" />
+      <TextField fx:id="cov_date" layoutX="238.0" layoutY="222.0" prefHeight="26.0" prefWidth="178.0" promptText="Vous irez quand ?" />
+      <Label layoutX="30.0" layoutY="273.0" prefHeight="26.0" prefWidth="138.0" text="CIN Chauffeur">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <TextField fx:id="cov_idc" layoutX="238.0" layoutY="271.0" prefHeight="26.0" prefWidth="178.0" />
+      <Label layoutX="37.0" layoutY="322.0" prefHeight="18.0" prefWidth="98.0" text="Vehicule">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></Label>
+      <TextField fx:id="cov_vehicule" layoutX="239.0" layoutY="319.0" prefHeight="26.0" prefWidth="178.0" promptText="Vous conduisez quoi ?" />
+      <Button cancelButton="true" layoutX="327.0" layoutY="379.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="270.0" text="Annuler">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
