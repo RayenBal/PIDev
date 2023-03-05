@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/testbd/TestBD.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Test/Main.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Services/ServiceChauffeur.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Utils/Main.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Entite/infotrafic.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/GUI/ajouterChauffeur.fxml</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Services/ServiceInfotrafic.java</file>
-            <file>file:/C:/Users/medzr/OneDrive/Bureau/pi/CRUDACHRAF/src/Services/AjouterChauffeurController.java</file>
+            <file>file:/C:/Users/medzr/OneDrive/Documents/GitHub/PIDev/CRUDACHRAF/src/GUI/menu.java</file>
+            <file>file:/C:/Users/medzr/OneDrive/Documents/GitHub/PIDev/CRUDACHRAF/src/GUI/Main.fxml</file>
+            <file>file:/C:/Users/medzr/OneDrive/Documents/GitHub/PIDev/CRUDACHRAF/src/GUI/ajouterChauffeur.fxml</file>
+            <file>file:/C:/Users/medzr/OneDrive/Documents/GitHub/PIDev/CRUDACHRAF/src/GUI/MainWindowController.java</file>
+            <file>file:/C:/Users/medzr/OneDrive/Documents/GitHub/PIDev/CRUDACHRAF/src/Services/AjouterChauffeurController.java</file>
         </group>
     </open-files>
 </project-private>
