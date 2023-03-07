@@ -7,11 +7,23 @@ package Services;
 
 import Entite.Covoiturage;
 import Utils.DataSource;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+import java.awt.AWTException;
+import java.awt.SystemTray;
+import java.awt.Toolkit;
+import java.awt.TrayIcon;
+import java.io.FileOutputStream;
 import java.sql.SQLException;
 import java.util.List;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+
 /**
  *
  * @author sanabenfadhel
@@ -120,6 +132,8 @@ public class ServiceCovoiturage implements IService<Covoiturage>{
             listcov.add(c);
         }
         return listcov;
+        
+        
     }
 
     @Override
@@ -141,6 +155,64 @@ Covoiturage d=new Covoiturage();
     }
         
         return d;
+        
     }
+    private void printCovoiturages() {
+    try {
+        ServiceCovoiturage sc = new ServiceCovoiturage();
+        List<Covoiturage> data = sc.readAll();
+
+        // Create a new PDF document
+        Document document = new Document();
+        PdfWriter.getInstance(document, new FileOutputStream("covoiturages.pdf"));
+        document.open();
+
+        // Add the list of covoiturages to the document
+        for (Covoiturage covoiturage : data) {
+            Paragraph paragraph = new Paragraph(covoiturage.toString());
+            document.add(paragraph);
+        }
+
+        document.close();
+
+        // Show a success message
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Information");
+        alert.setHeaderText("Impression réussie");
+        alert.setContentText("La liste des covoiturages a été imprimée avec succès.");
+        alert.showAndWait();
+    } catch (Exception e) {
+        // Show an error message if an exception occurs
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Erreur");
+        alert.setHeaderText("Erreur lors de l'impression");
+        alert.setContentText("Une erreur s'est produite lors de l'impression de la liste des covoiturages.");
+        alert.showAndWait();
+    }
+}
+    
+    private void notifyUser(String message) {
+        if (SystemTray.isSupported()) {
+            try {
+                // Initialiser SystemTray
+                SystemTray tray = SystemTray.getSystemTray();
+
+                // Créer une icône pour la notification
+                java.awt.Image image = Toolkit.getDefaultToolkit().createImage("icon.png");
+                TrayIcon trayIcon = new TrayIcon(image, "Notification");
+
+                // Ajouter l'icône au SystemTray
+                tray.add(trayIcon);
+
+                // Afficher la notification
+                trayIcon.displayMessage("Notification", message, TrayIcon.MessageType.INFO);
+            } catch (AWTException e) {
+                System.err.println("Erreur lors de l'initialisation du SystemTray: " + e);
+            }
+        } else {
+            System.out.println("SystemTray n'est pas pris en charge");
+        }
+    }
+
     
 }

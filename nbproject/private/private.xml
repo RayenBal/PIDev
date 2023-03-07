@@ -3,18 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Services/IService.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/gestcovoiturage/GestCovoiturage.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/ListVehiculeController.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/ModifyVehiculeController.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Test/AfficherListeCovoiturage.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/selectcov.fxml</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Services/ServiceCovoiturage.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Services/IService.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/gestcovoiturage/GestCovoiturage.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Entite/Covoiturage.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/ListVehiculeController.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/ModifyVehiculeController.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/UpdatecovController.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/AjoutVehiculeController.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/selectcov.css</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Services/ServiceVehicule.java</file>
-            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/SelectcovController.java</file>
             <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/Test/MettreAjour.java</file>
+            <file>file:/C:/Users/ADMIN/Desktop/PiDEV/GestCovoiturage/GestCovoiturage/src/view/SelectcovController.java</file>
         </group>
     </open-files>
 </project-private>
