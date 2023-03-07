@@ -10,7 +10,6 @@ import entites.Passager;
 import service.PassagerService;
 import java.sql.SQLException;
 import java.util.List;
-
 /**
  *
  * @author sarra
@@ -54,7 +53,7 @@ public class Testtest {
         }
 */
 
-         Passager c2 = new Passager("mmmsjsjd ","abdslem","14555","5 rue eljarana","kaaa@yahoo.com");
+         Passager c2 = new Passager("hehehe","abdslem","14555","5 rue eljarana","kaaa@yahoo.com");
 
         
         try {

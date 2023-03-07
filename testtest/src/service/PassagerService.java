@@ -65,8 +65,8 @@ public List<Passager> readAll() throws SQLException{
         }
         return listper;
     }
-public void update(Passager c,int id) throws SQLException {
-        String req="UPDATE `passager` SET `nomp`=?,`prenomp`=?,`nump`=?,`adressep`=?,`emailp`=? where `idp` ="+id+"";
+public void update(Passager c) throws SQLException {
+        String req="UPDATE `passager` SET `nomp`=?,`prenomp`=?,`nump`=?,`adressep`=?,`emailp`=?";
         
         PreparedStatement pre=con.prepareStatement(req);
      
@@ -79,9 +79,9 @@ public void update(Passager c,int id) throws SQLException {
          
          pre.executeUpdate();
     }
-   public boolean supprime(Passager c, int id) throws SQLException {
+   public boolean supprime(Passager c) throws SQLException {
         try{
-            String req ="DELETE FROM `passager` WHERE idp ="+id+"";
+            String req ="DELETE FROM `passager`";
          Statement state;
          Connection cnx=DataSource.getInstance().getConnection();
          state=cnx.createStatement();
@@ -93,6 +93,16 @@ public void update(Passager c,int id) throws SQLException {
             return false;
         }
     }    
+   public boolean exists(String nom, String prenom) throws SQLException {
+    Connection cnx = DataSource.getInstance().getCnx();
+    PreparedStatement ps = cnx.prepareStatement("SELECT COUNT(*) FROM passager WHERE nomp = ? AND prenomp = ?");
+    ps.setString(1, nom);
+    ps.setString(2, prenom);
+    ResultSet rs = ps.executeQuery();
+    rs.next();
+    return rs.getInt(1) > 0;
+}
+
 
 
 

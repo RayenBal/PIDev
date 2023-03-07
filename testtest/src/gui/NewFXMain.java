@@ -30,12 +30,12 @@ public class NewFXMain extends Application {
                System.out.println("aa");
                
             
-            Parent root = FXMLLoader.load(getClass().getResource("passager.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("menuJava.fxml"));
             
              
             Scene scene = new Scene(root);
             
-            //primaryStage.setTitle("SupprimerPassager");
+            primaryStage.setTitle("Passager");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {

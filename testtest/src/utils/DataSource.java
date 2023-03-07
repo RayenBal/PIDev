@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class DataSource {
      public static DataSource data;
     public Connection con;
-    public String url = "jdbc:mysql://localhost:3306/tictacgo";
+    public String url = "jdbc:mysql://localhost:3306/tictacgobd";
     public String login = "root";
     public String pwd = "";
 
@@ -39,5 +39,9 @@ public class DataSource {
             data = new DataSource();
         }
         return data;
+    }
+
+    public Connection getCnx() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

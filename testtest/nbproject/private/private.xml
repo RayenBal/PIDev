@@ -3,7 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sarra/Pictures/testtest/src/gui/AfficherPassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/NewFXMainn.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui/UpdatePassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/Destination.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/service/ServiceDestination.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/UpdatedestinationController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/utils/DataSource.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/afficherDestinationController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui/PassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui/AfficherPassager.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui/SupprimerPassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/supprimerDestination.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/afficherDestination.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/SupprimerDestinationController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui/AfficherPassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/DestinationController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/utils/SendMail.java</file>
+            <file>file:/C:/Users/sarra/Desktop/testtest/src/gui2/updatedestination.fxml</file>
         </group>
     </open-files>
 </project-private>

@@ -28,7 +28,8 @@ public class Destination {
         this.adressed = adressed;
     }
 
- 
+    public Destination() {
+    }
 
     public int getIdd() {
         return idd;
