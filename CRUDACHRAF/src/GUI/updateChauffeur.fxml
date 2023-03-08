@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -21,7 +23,24 @@
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-      <Pane layoutY="-3.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #024059;" />
+      <Pane layoutY="-3.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #024059;">
+         <children>
+            <ImageView fx:id="modif" layoutX="78.0" layoutY="16.0" onMouseClicked="#modif">
+               <image>
+                  <Image url="@../modif.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="supp" fitHeight="41.0" fitWidth="39.0" layoutX="81.0" layoutY="94.0" onMouseClicked="#supp">
+               <image>
+                  <Image url="@../supp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="aff" layoutX="71.0" layoutY="161.0" onMouseClicked="#aff">
+               <image>
+                  <Image url="@../aff.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
       <Label layoutX="338.0" layoutY="33.0" text="Modifier un chauffeur">
          <font>
             <Font size="22.0" />
