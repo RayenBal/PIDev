@@ -1,5 +1,19 @@
 package GUI;
 
+import javafx.animation.Animation;
+import javafx.scene.control.Label;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
 import Entite.Chauffeur;
 import Entite.infotrafic;
 import static Services.AjouterChauffeurController.ACCOUNT_SID;
@@ -19,6 +33,7 @@ import com.google.zxing.client.j2se.MatrixToImageWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import static java.util.Collections.list;
 import java.util.Comparator;
@@ -54,6 +69,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 public class AfficherChauffeurController implements Initializable {
@@ -97,7 +113,10 @@ public class AfficherChauffeurController implements Initializable {
     private Button btnA;
     @FXML
     private Button btnD;
-   // Twilio account SID and auth token
+    @FXML
+    private Label dateLabel;
+    @FXML
+    private Label clockLabel;
     public static final String ACCOUNT_SID = "AC7820afe394dbafb7a218a18b491c5c07";
     public static final String AUTH_TOKEN = "c1dc4b87078529383977c6dc59704523";
 
@@ -113,18 +132,41 @@ private ComboBox<String> comboBox;
 @Override
 public void initialize(URL url, ResourceBundle rb) {
     afficherChauffeurs();
-    
+
     comboBox.getItems().addAll("Trier par nom", "Trier par Prenom");
     comboBox.setOnAction(event -> {
         String choix = comboBox.getValue();
         if (choix.equals("Trier par nom")) {
             trierParNom();
-          }
-          if (choix.equals("Trier par Prenom")) {
+        }
+        if (choix.equals("Trier par Prenom")) {
             trierParPrenom();
-          }
+        }
     });
+
+    // Set up the clock label to show the current time
+    Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
+        // Get the current date and time
+        LocalDateTime now = LocalDateTime.now();
+
+        // Format the time
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        String formattedTime = now.format(timeFormatter);
+
+        // Set the label's text to the formatted time
+        clockLabel.setText(formattedTime);
+    }));
+    timeline.setCycleCount(Animation.INDEFINITE);
+    timeline.play();
+
+    // Set up the date label to show the current date
+    LocalDateTime now = LocalDateTime.now();
+    DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    String formattedDate = now.format(dateFormatter);
+    dateLabel.setText(formattedDate);
 }
+
+
 
     private void afficherChauffeurs() {
         try {
