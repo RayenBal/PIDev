@@ -10,16 +10,19 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ListView?>
+
+<?import javafx.scene.control.cell.TextFieldListCell?>
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacee.InterfacexpController">
    <children>
       <VBox alignment="CENTER" prefHeight="504.0" prefWidth="151.0" spacing="20.0" styleClass="primary-background" stylesheets="@../values/styles.css">
          <children>
-            <Button fx:id="Add" mnemonicParsing="false" onAction="#handleClick" prefHeight="34.0" prefWidth="41.0" styleClass="primary-background">
+            <Button fx:id="Add" mnemonicParsing="false" onAction="#handleClick" prefHeight="34.0" prefWidth="41.0" styleClass="primary-background" stylesheets="@../values/styles.css">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@@icons/plus.png" />
+                        <Image url="@../img/plus.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -152,7 +155,7 @@
                            <graphic>
                               <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons/refresh.png" />
+                                    <Image url="@../img/refresh.png" />
                                  </image>
                               </ImageView>
                            </graphic>

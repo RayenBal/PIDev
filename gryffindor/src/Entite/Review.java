@@ -43,7 +43,7 @@ public class Review {
 
     @Override
     public String toString() {
-        return "voici les avis que vous avez envoyé   "+  " avis=" + avis ;
+        return "voici les avis que vous avez envoyé   "+  " avis: " + avis ;
     }
 
     public String getTitle() {

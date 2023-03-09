@@ -85,10 +85,14 @@ public class Reclamation {
 
     @Override
     public String toString() {
-        return "Réclamations{" + " description=" + description + ", date_creation=" + date_creation +", effectué sur=" + nomr+"id_utilisateur =" + id_compte  + '}';
+        return  " description:   " + description + ", date_creation:   " + date_creation +", effectué sur:   " + nomr+"id_utilisateur:  " + id_compte  + '}';
     }
 
     public String getTitle() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Object desProperty() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

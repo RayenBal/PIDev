@@ -83,10 +83,7 @@ public class FindbynameController implements Initializable {
     }
         
         
-        
-       
-        
-    }
+     }
 
 
   

@@ -1,11 +1,15 @@
 package Entite.gui;
 
+import java.util.Properties;  //It is used to maintain a list of values in which the key is a string and the value is also a string
+import java.util.*;
+import javax.mail.*;
+import javax.mail.internet.*;
 import Entite.Reclamation;
 import Services.ServiceReclamation;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
-import java.util.ResourceBundle;
+import java.util.ResourceBundle;  //, we can say that it provides a mechanism to globalize the messages.
 import javafx.fxml.Initializable;
 
 import javafx.event.ActionEvent;
@@ -104,6 +108,48 @@ public class AjoutrecController implements Initializable {
             alert.setContentText("Une erreur s'est produite !");
             alert.showAndWait();
         }
+        
+       
+        String EmailS = "manar.wahada@esprit.tn";
+   //envoyer l'email de réinitialisation de mot de passe
+                Properties props = new Properties();
+                
+                props.put("mail.smtp.starttls.enable", "true");
+                props.put("mail.smtp.host", "smtp.mail.yahoo.com");
+                props.put("mail.smtp.socketFactory.port", "465");
+                props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+                props.put("mail.smtp.auth", "true");
+                props.put("mail.smtp.port", "465");
+             String username = "mohamedrayendhraief@yahoo.fr";
+             String password = "yxzghjnvgpqvnwhx";
+                Session session = Session.getInstance(props,
+                        new javax.mail.Authenticator() {
+                    @Override
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password);
+                    }
+                });
+
+                try {
+              
+                    Message message = new MimeMessage(session);
+                    message.setFrom(new InternetAddress(username));
+                    message.setRecipients(Message.RecipientType.TO,
+                            InternetAddress.parse(EmailS));
+                    message.setSubject("Envoie de Reclamation");
+                    message.setText("Bonjour,\n\n"
+                            + "Vous avez envoyé une réclamation. nous vous informe qu'on traite votre réclamation. \n\n"
+                            + "Cordialement,\n"
+                            + "L'équipe de support gryffindor");
+
+                    Transport.send(message);
+
+                    System.out.println("Le message a été envoyé avec succès.");
+
+                } catch (MessagingException e) {
+                    throw new RuntimeException(e);
+                }
+
     }
 
     public void initialize(URL url, ResourceBundle rb) {

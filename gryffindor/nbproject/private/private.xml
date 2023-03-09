@@ -3,13 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/ajoutrec.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/findbyname.fxml</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/AfficherrecController.java</file>
             <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/AjoutrecController.java</file>
             <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/SupprimerrecController.java</file>
             <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/UpdateController.java</file>
-            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui2/UpdateReview.fxml</file>
-            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/supprimerrec.java</file>
-            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui2/UpdateReview.java</file>
-            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui2/UpdateReviewController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/supprimerrec.fxml</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/FindbynameController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/update.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/all.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/Reclamation.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/afficherrec.fxml</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/AllController.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Services/ServiceReclamation.java</file>
+            <file>file:/C:/Users/ASUS/Desktop/gryffindor/src/Entite/gui/all.fxml</file>
         </group>
     </open-files>
 </project-private>

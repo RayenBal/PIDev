@@ -1,3 +1,4 @@
+
 package Entite.gui;
 
 import Entite.Reclamation;
@@ -12,8 +13,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
  * FXML Controller class
@@ -21,9 +23,17 @@ import javafx.scene.layout.StackPane;
  * @author ASUS
  */
 public class AfficherrecController implements Initializable {
-
+/*
+    nitializable and the method it adds are used when you want to interact with 
+    
+    stuff injected with @FXML. During construction those variables aren't filled so 
+    you cannot interact with them so JavaFX will call the Initializable interface 
+    after everything is set up.
+    At that point those variables are available and can be manipulated.
+    */
+    
     @FXML
-    private ListView<Reclamation> idtable;
+    private TableView<Reclamation> idtable;
     @FXML
     private Button btsup;
 
@@ -32,17 +42,28 @@ public class AfficherrecController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        TableColumn<Reclamation, Integer> idCol = new TableColumn<>("ID");
+        idCol.setPrefWidth(50);
+        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
+
+        TableColumn<Reclamation, String> descriptionCol = new TableColumn<>("Description");
+        descriptionCol.setPrefWidth(200);
+        descriptionCol.setCellValueFactory(new PropertyValueFactory<>("description"));
+
+        TableColumn<Reclamation, String> dateCol = new TableColumn<>("Date");
+        dateCol.setPrefWidth(100);
+        dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
+
+        idtable.getColumns().addAll(idCol, descriptionCol, dateCol);
     }    
 
     @FXML
     private void Afficherrec(ActionEvent event) throws SQLException {
         ServiceReclamation sc = new ServiceReclamation();
         List<Reclamation> ctab = sc.readAll();
-         System.out.println(ctab);
-         ObservableList<Reclamation> r = FXCollections.observableArrayList(ctab);
-      idtable.setItems(r);
-        
+        System.out.println(ctab);
+        ObservableList<Reclamation> r = FXCollections.observableArrayList(ctab);
+        idtable.setItems(r);
     }
 
 }
