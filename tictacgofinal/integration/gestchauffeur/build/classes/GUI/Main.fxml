@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="894.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="Test.MainController">
+   <children>
+      <Label layoutX="314.0" layoutY="77.0" prefHeight="92.0" prefWidth="266.0" text="TABLE CHAUFFEUR">
+         <font>
+            <Font name="Maiandra GD" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="150.0" layoutY="237.0" mnemonicParsing="false" onAction="#ToAjout" prefHeight="71.0" prefWidth="152.0" text="AJOUTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="603.0" layoutY="237.0" mnemonicParsing="false" onAction="#ToSupprimer" prefHeight="71.0" prefWidth="152.0" text="SUPPRIMER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="150.0" layoutY="415.0" mnemonicParsing="false" onAction="#ToUpdate" prefHeight="71.0" prefWidth="152.0" text="MODIFIER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="603.0" layoutY="423.0" mnemonicParsing="false" onAction="#ToAffichage" prefHeight="71.0" prefWidth="152.0" text="AFFICHER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="199.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../Media/logos/logofinal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

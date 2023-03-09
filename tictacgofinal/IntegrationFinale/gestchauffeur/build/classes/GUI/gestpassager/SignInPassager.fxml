@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.gestpassager.SignInPassagerController">
+   <children>
+      <Button fx:id="ajoutmodificationrec" layoutX="34.0" layoutY="164.0" mnemonicParsing="false" onAction="#ajoutmodificationrec" text="ajoutmodificationreclamation" />
+      <Button fx:id="ajoutdestination" layoutX="48.0" layoutY="111.0" mnemonicParsing="false" onAction="#ajoutdestination" text="ajout destination" />
+      <Button fx:id="affichercovoiturage" layoutX="35.0" layoutY="46.0" mnemonicParsing="false" onAction="#affichercovoiturage" text="affichage covoiturage" />
+      <Button fx:id="ajoutpaiement" layoutX="54.0" layoutY="233.0" mnemonicParsing="false" onAction="#ajoutpaiement" text="ajoutPaiement" />
+      <Button fx:id="affichageinfotraffic" layoutX="34.0" layoutY="291.0" mnemonicParsing="false" onAction="#affichageinfotraffic" text="affichageInfoTraffic" />
+      <Label fx:id="label" layoutX="501.0" layoutY="38.0" />
+      <Label fx:id="label1" layoutX="549.0" layoutY="84.0" />
+      <Button fx:id="Reviewall" layoutX="257.0" layoutY="46.0" mnemonicParsing="false" onAction="#Reviewall" text="Reviewallofit" />
+      <Button fx:id="sign_out" layoutX="421.0" layoutY="317.0" mnemonicParsing="false" onAction="#sign_out" prefHeight="26.0" prefWidth="106.0" text="sign out" />
+   </children>
+</AnchorPane>

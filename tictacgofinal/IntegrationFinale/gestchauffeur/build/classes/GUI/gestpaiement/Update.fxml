@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.gestpaiement.UpdateController">
+   <children>
+      <TextField fx:id="txtid" layoutX="82.0" layoutY="38.0" />
+      <TextField fx:id="txtValide" layoutX="82.0" layoutY="272.0" />
+      <TextField fx:id="M_id" layoutX="82.0" layoutY="335.0" />
+      <TextField fx:id="txtM" layoutX="82.0" layoutY="94.0" />
+      <TextField fx:id="txtD" layoutX="82.0" layoutY="154.0" />
+      <TextField fx:id="txtDate" layoutX="82.0" layoutY="209.0" />
+      <Label layoutX="38.0" layoutY="42.0" text="id" />
+      <Label layoutX="33.0" layoutY="98.0" text="prix" />
+      <Label layoutX="13.0" layoutY="157.0" prefHeight="18.0" prefWidth="99.0" text="Description" />
+      <Label layoutX="23.0" layoutY="212.0" prefHeight="18.0" prefWidth="78.0" text="Date" />
+      <Label layoutX="23.0" layoutY="275.0" prefHeight="18.0" prefWidth="78.0" text="Valide" />
+      <Label layoutX="38.0" layoutY="339.0" text="id" />
+      <Button fx:id="btn3" layoutX="343.0" layoutY="167.0" mnemonicParsing="false" onAction="#Update" prefHeight="66.0" prefWidth="119.0" text="Update" />
+      <Label fx:id="idER" layoutX="83.0" layoutY="64.0" prefHeight="18.0" prefWidth="158.0" />
+      <Label fx:id="prER" layoutX="84.0" layoutY="120.0" prefWidth="150.0" />
+      <Label fx:id="desER" layoutX="81.0" layoutY="180.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label fx:id="DaER" layoutX="84.0" layoutY="235.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label fx:id="VER" layoutX="84.0" layoutY="298.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label fx:id="ideer" layoutX="87.0" layoutY="361.0" prefHeight="18.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.gestuserassurance.TestbackController">
+   <left>
+      <AnchorPane prefHeight="725.0" prefWidth="256.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="disap" layoutX="89.0" layoutY="155.0" prefHeight="725.0" prefWidth="256.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#dispayReclam" prefHeight="25.0" prefWidth="256.0" text="reviews" />
+                  <Button fx:id="passagers" mnemonicParsing="false" onAction="#dispayPassagers" prefHeight="26.0" prefWidth="282.0" text="Passagers" />
+                  <Button fx:id="chauffeurs" mnemonicParsing="false" onAction="#dispayChauffeurs" prefHeight="26.0" prefWidth="267.0" text="Chauffeurs" />
+                  <Button fx:id="Destinations" mnemonicParsing="false" onAction="#displayDestinations" prefHeight="26.0" prefWidth="263.0" text="Destinations" />
+                  <Button fx:id="couvoiturage" mnemonicParsing="false" onAction="#displaycouvoiturage" prefHeight="26.0" prefWidth="263.0" text="couvoiturage" />
+                  <Button fx:id="vehicule" mnemonicParsing="false" onAction="#displayvehicule" prefHeight="26.0" prefWidth="263.0" text="vehicule" />
+                  <Button fx:id="paiement" mnemonicParsing="false" onAction="#displaypaiement" prefHeight="26.0" prefWidth="263.0" text="paiement" />
+                  <Button fx:id="reclamation" mnemonicParsing="false" onAction="#displayreclamation" prefHeight="26.0" prefWidth="263.0" text="reclamation" />
+                  <Button fx:id="info_traffic" mnemonicParsing="false" onAction="#displayinfo_traffic" prefHeight="26.0" prefWidth="263.0" text="info traffic" />
+                  <Button fx:id="compte" mnemonicParsing="false" onAction="#displaycompte" prefHeight="26.0" prefWidth="263.0" text="compte" />
+                  <Button fx:id="assurance" mnemonicParsing="false" onAction="#displayassurance" prefHeight="26.0" prefWidth="263.0" text="assurance" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorcenter" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="sign_out" layoutX="654.0" layoutY="650.0" mnemonicParsing="false" onAction="#sign_out" prefHeight="26.0" prefWidth="140.0" text="sign out" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

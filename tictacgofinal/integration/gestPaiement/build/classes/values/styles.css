@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.primary-background{
+    -fx-background-color:#F25C05;
+    
+}
+.border-background{
+     -fx-border-color:derive(#F27405, 100%);
+}
+.button1{
+    -fx-background-color:  #024059;
+   
+}
+.list-cell:hover {
+    -fx-background-color: lightpink;
+}
+.list-view {
+    -fx-background-color: pink;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: lightpink;
+}

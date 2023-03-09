@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Entite.gui.AllController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="504.0" prefWidth="151.0" spacing="20.0" style="-fx-background-color: #011640;" styleClass="primary-background" stylesheets="@../values/styles.css">
+         <children>
+            <Button fx:id="Add" mnemonicParsing="false" onAction="#handleClick" prefHeight="34.0" prefWidth="41.0" style="-fx-background-color: #F27405;" styleClass="primary-background" stylesheets="@../values/styles.css">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Update" mnemonicParsing="false" onAction="#handleClick" prefHeight="34.0" prefWidth="41.0" style="-fx-background-color: #F27405;" styleClass="primary-background" stylesheets="@../values/styles.css">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Delete" mnemonicParsing="false" onAction="#handleClick" prefHeight="35.0" prefWidth="43.0" style="-fx-background-color: #F27405;" styleClass="primary-background" stylesheets="@../values/styles.css">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/delete%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Search" mnemonicParsing="false" onAction="#handleClick" prefHeight="35.0" prefWidth="43.0" style="-fx-background-color: #F27405;" styleClass="primary-background" stylesheets="@../values/styles.css">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Display" mnemonicParsing="false" onAction="#handleClick" prefHeight="35.0" prefWidth="43.0" style="-fx-background-color: #F27405;" styleClass="primary-background" stylesheets="@../values/styles.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/eye.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane prefHeight="117.0" prefWidth="151.0" style="-fx-background-color: #011640;" styleClass="primary-background" />
+      <Pane fx:id="panesta0" layoutX="151.0" layoutY="-1.0" prefHeight="504.0" prefWidth="650.0">
+         <children>
+            <StackPane layoutX="1.0" layoutY="1.0" prefHeight="504.0" prefWidth="650.0">
+               <children>
+                  <Pane fx:id="pane1" prefHeight="404.0" prefWidth="366.0" style="-fx-background-color: #F25C05;">
+                     <children>
+                              <VBox alignment="CENTER" layoutX="129.0" layoutY="56.0" spacing="10">
+         <Label fx:id="lbrec" text="Reclamation">
+    <font>
+        <Font name="System Bold" size="20.0" />
+    </font>
+    <style>
+        -fx-text-fill: white;
+    </style>
+</Label>
+             <Label fx:id="lbdes" text="Description" textFill="#f4f0f0">
+                 <font>
+                     <Font name="Candara Bold Italic" size="14.0" />
+                 </font>
+             </Label>
+
+            <VBox alignment="CENTER" spacing="5">
+                <TextField fx:id="tfdes" prefHeight="30.0" prefWidth="329.0" />
+                <HBox alignment="CENTER" spacing="5">
+                    <VBox alignment="CENTER" spacing="5">
+                        <Label fx:id="lbnomr" text="Effectué sur" textFill="#fcfcfc">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                        <TextField fx:id="tfnomr" prefHeight="26.0" prefWidth="123.0" />
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="5" />
+                    <VBox alignment="CENTER" spacing="5">
+                        <Label fx:id="lbidc" text="ID utilisateur" textFill="#fcfcfc">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                        <TextField fx:id="tfidc" prefHeight="26.0" prefWidth="123.0" />
+                    </VBox>
+                </HBox>
+            </VBox>
+        </VBox>
+      <SplitPane opacity="0.27" prefHeight="408.0" prefWidth="73.0" />
+      <SplitPane layoutX="526.0" opacity="0.27" prefHeight="410.0" prefWidth="74.0" />
+          <Button fx:id="btt" layoutX="264.0" layoutY="290.0" onAction="#Add" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="Envoyer" textAlignment="RIGHT">
+              <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" preserveRatio="true">
+                      <image>
+                          <Image url="@icons/bell.png" />
+                      </image>
+                  </ImageView>
+              </graphic>
+          </Button>
+      <DatePicker fx:id="datePicker" layoutX="213.0" layoutY="247.0" prefHeight="26.0" prefWidth="151.0" />
+            <Label fx:id="lbdate" layoutX="280.0" layoutY="228.0" text="Date" textFill="#fcf5f5" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pane2" prefHeight="404.0" prefWidth="366.0" style="-fx-background-color: #011640;">
+                     <children>
+                          <Label fx:id="lbrec1" layoutX="173.0" layoutY="80.0" prefHeight="42.0" prefWidth="291.0" text="Modifier votre réclamation" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdes1" layoutX="161.0" layoutY="194.0" text="Description" textFill="#efe6e6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdate1" layoutX="180.0" layoutY="243.0" text="Date" textFill="#efe6e6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfnomr1" layoutX="231.0" layoutY="138.0" prefHeight="30.0" prefWidth="175.0" />
+      <Button fx:id="btt1" layoutX="271.0" layoutY="294.0" mnemonicParsing="false" onAction="#Update" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="Envoyer" textFill="#e7dcdc" />
+      <Label fx:id="lbnomr1" layoutX="193.0" layoutY="144.0" text="nom" textFill="#efebeb">
+         <font>
+            <Font name="Candara Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfdes1" layoutX="231.0" layoutY="183.0" prefHeight="42.0" prefWidth="175.0" />
+      <DatePicker fx:id="datePicker1" layoutX="231.0" layoutY="239.0" />
+      <SplitPane dividerPositions="0.5" layoutX="-7.0" layoutY="-5.0" opacity="0.18" prefHeight="407.0" prefWidth="146.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="98.0" />
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="466.0" opacity="0.15" prefHeight="407.0" prefWidth="134.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pane3" prefHeight="494.0" prefWidth="650.0" style="-fx-background-color: #04D9D9;">
+                     <children>
+                      
+                              <TextField fx:id="tfnomr3" layoutX="261.0" layoutY="176.0" />
+      <Label fx:id="lbnomr3" layoutX="177.0" layoutY="180.0" prefHeight="17.0" prefWidth="84.0" text="nom" textFill="#efe5e5">
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font></Label>
+      <Button fx:id="btsup" layoutX="253.0" layoutY="254.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="Supprimer" />
+      <Label layoutX="185.0" layoutY="111.0" text="supprimer votre réclamation" textFill="#f7eaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="-13.0" opacity="0.19" prefHeight="424.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="462.0" opacity="0.19" prefHeight="411.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pane4" prefHeight="404.0" prefWidth="366.0" style="-fx-background-color: #04D9D9;">
+                     <children>
+                       <TextField fx:id="tfnomr4" layoutX="225.0" layoutY="154.0" />
+      <Label fx:id="lbnomr4" layoutX="172.0" layoutY="158.0" prefHeight="17.0" prefWidth="84.0" text="nom" textFill="#efe5e5">
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font></Label>
+      <Button fx:id="btcher" layoutX="244.0" layoutY="186.0" mnemonicParsing="false" onAction="#Search" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="chercher" />
+      <Label layoutX="193.0" layoutY="50.0" text="Chercher vos réclamation" textFill="#f7eaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <SplitPane layoutY="-13.0" opacity="0.19" prefHeight="424.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+      <SplitPane layoutX="462.0" opacity="0.19" prefHeight="411.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="92.0" />
+        </items>
+      </SplitPane>
+      <Label layoutX="151.0" layoutY="126.0" text="Entrer le nom du personne que vous souhaitez rechercher" textFill="#efeaea">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ListView fx:id="idtable11" layoutX="37.0" layoutY="229.0" opacity="0.61" prefHeight="162.0" prefWidth="509.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pane5" prefHeight="404.0" prefWidth="366.0" style="-fx-background-color: #024059;">
+                     <children>
+                      
+                         
+                       <TableView fx:id="tableview" layoutX="33.0" layoutY="159.0" onMouseClicked="#Display" prefHeight="202.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="des" prefWidth="75.0" text="Description" />
+          <TableColumn fx:id="datecr" prefWidth="75.0" text="Date création" />
+            <TableColumn fx:id="nom2" prefWidth="75.0" text="Effectuée sur" />
+            
+        </columns>
+      </TableView>
+                        
+                                           
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

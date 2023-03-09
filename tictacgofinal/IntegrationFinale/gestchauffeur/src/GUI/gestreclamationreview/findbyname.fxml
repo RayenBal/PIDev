@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.gestreclamationreview.FindbynameController">
+   <children>
+      <TextField fx:id="tfnomr" layoutX="225.0" layoutY="154.0" />
+      <Label fx:id="lbnomr" layoutX="172.0" layoutY="158.0" prefHeight="17.0" prefWidth="84.0" text="nom" textFill="#efe5e5">
+         <font>
+            <Font name="Candara" size="13.0" />
+         </font></Label>
+      <Button fx:id="btcher" layoutX="244.0" layoutY="186.0" mnemonicParsing="false" onAction="#Findbyname" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="chercher" />
+      <Label layoutX="193.0" layoutY="50.0" text="Chercher vos réclamation" textFill="#f7eaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <SplitPane layoutY="-13.0" opacity="0.19" prefHeight="424.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+      <SplitPane layoutX="462.0" opacity="0.19" prefHeight="411.0" prefWidth="138.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="92.0" />
+        </items>
+      </SplitPane>
+      <Label layoutX="151.0" layoutY="126.0" text="Entrer le nom du personne que vous souhaitez rechercher" textFill="#efeaea">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ListView fx:id="idtable" layoutX="37.0" layoutY="229.0" opacity="0.61" prefHeight="162.0" prefWidth="509.0" />
+   </children>
+</AnchorPane>

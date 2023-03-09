@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.gestuserassurance.SignInAdminController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="642.0" prefWidth="142.0">
+         <children>
+            <Button fx:id="passagers" mnemonicParsing="false" onAction="#passagers" prefHeight="26.0" prefWidth="147.0" text="Passagers" />
+            <Button fx:id="chauffeurs" mnemonicParsing="false" onAction="#chauffeurs" prefHeight="26.0" prefWidth="154.0" text="Chauffeurs" />
+            <Button fx:id="destinations" mnemonicParsing="false" onAction="#destinations" prefHeight="26.0" prefWidth="174.0" text="Destinations" />
+            <Button fx:id="covoiturages" mnemonicParsing="false" onAction="#covoiturages" prefHeight="26.0" prefWidth="186.0" text="Covoiturages" />
+            <Button fx:id="vehicules" mnemonicParsing="false" onAction="#vehicules" prefHeight="26.0" prefWidth="211.0" text="Vehicules" />
+            <Button fx:id="relamations" mnemonicParsing="false" onAction="#relamations" prefHeight="26.0" prefWidth="179.0" text="Réclamations" />
+            <Button fx:id="paiement" mnemonicParsing="false" onAction="#paiement" prefHeight="26.0" prefWidth="167.0" text="Paiement" />
+            <Button fx:id="reviews" mnemonicParsing="false" onAction="#reviews" prefHeight="26.0" prefWidth="156.0" text="Reviews" />
+            <Button fx:id="infotrafics" mnemonicParsing="false" onAction="#infotrafics" prefHeight="26.0" prefWidth="208.0" text="Infotrafics" />
+            <Button fx:id="users" mnemonicParsing="false" onAction="#users" prefHeight="26.0" prefWidth="164.0" text="Users" />
+            <Button fx:id="assurance" mnemonicParsing="false" onAction="#assurance" prefHeight="26.0" prefWidth="235.0" text="Assurance" />
+         </children>
+      </VBox>
+      <Pane layoutX="141.0" layoutY="-4.0" prefHeight="650.0" prefWidth="850.0" style="-fx-background-color: #024059;">
+         <children>
+            <StackPane fx:id="bigpane" layoutX="14.0" layoutY="72.0">
+               <children>
+                  <Pane fx:id="panecovoiturages" prefHeight="578.0" prefWidth="829.0" style="-fx-background-color: #ff0051;">
+                     <children>
+                        <Label layoutX="65.0" layoutY="14.0" prefHeight="26.0" prefWidth="164.0" text="Gestion des covoiturages" textFill="#00ff07" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panepassagers" prefHeight="577.0" prefWidth="821.0" style="-fx-background-color: #ff0000;">
+                     <children>
+                        <Label layoutX="18.0" layoutY="14.0" prefHeight="43.0" prefWidth="164.0" text="Gestion des passagers" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="chauffeurspane" prefHeight="577.0" prefWidth="821.0" style="-fx-background-color: #dffa13;">
+                     <children>
+                        <Label layoutX="32.0" layoutY="14.0" prefWidth="186.0" text="Gestion des chauffeurs" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panedestinations" prefHeight="578.0" prefWidth="822.0" style="-fx-background-color: #00e1ff;">
+                     <children>
+                        <Label layoutX="83.0" layoutY="26.0" prefHeight="26.0" prefWidth="142.0" text="Gestion des destinations" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="vehiculespane" prefHeight="578.0" prefWidth="830.0" style="-fx-background-color: black;">
+                     <children>
+                        <Label text="Gestion des vehicules" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="reclamationspane" prefHeight="578.0" prefWidth="830.0" style="-fx-background-color: white;" />
+                  <Pane fx:id="panepaiement" prefHeight="585.0" prefWidth="830.0" style="-fx-background-color: pink;" />
+                  <Pane fx:id="paiementpane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" />
+                  <Pane fx:id="mpaiementpane" prefHeight="586.0" prefWidth="830.0" style="-fx-background-color: white;" />
+                  <Pane fx:id="reviewpane" prefHeight="586.0" prefWidth="837.0" style="-fx-background-color: red;" />
+                  <Pane fx:id="infotraficpane" prefHeight="586.0" prefWidth="838.0" style="-fx-background-color: black;" />
+                  <Pane fx:id="userspane" prefHeight="586.0" prefWidth="838.0" style="-fx-background-color: white;" />
+                  <Pane fx:id="paneassurance" prefHeight="586.0" prefWidth="838.0" style="-fx-background-color: green;" />
+               </children>
+            </StackPane>
+            <Label fx:id="label" layoutX="22.0" layoutY="14.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

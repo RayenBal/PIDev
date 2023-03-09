@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.gestreclamationreview.UpdateController">
+   <children>
+      <Label fx:id="lbrec" layoutX="173.0" layoutY="80.0" prefHeight="42.0" prefWidth="291.0" text="Modifier votre réclamation" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdes" layoutX="161.0" layoutY="194.0" text="Description" textFill="#efe6e6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbdate" layoutX="180.0" layoutY="243.0" text="Date" textFill="#efe6e6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfnomr" layoutX="231.0" layoutY="138.0" prefHeight="30.0" prefWidth="175.0" />
+      <Button fx:id="btt" layoutX="271.0" layoutY="294.0" mnemonicParsing="false" onAction="#updateReclamation" style="-fx-background-color: #F25C05; -fx-text-fill: white;" text="Envoyer" textFill="#e7dcdc" />
+      <Label fx:id="lbnomr" layoutX="193.0" layoutY="144.0" text="nom" textFill="#efebeb">
+         <font>
+            <Font name="Candara Bold Italic" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfdes" layoutX="231.0" layoutY="183.0" prefHeight="42.0" prefWidth="175.0" />
+      <DatePicker fx:id="datePicker" layoutX="231.0" layoutY="239.0" />
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="-7.0" layoutY="-5.0" opacity="0.18" prefHeight="407.0" prefWidth="146.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="98.0" />
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="466.0" opacity="0.15" prefHeight="407.0" prefWidth="134.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

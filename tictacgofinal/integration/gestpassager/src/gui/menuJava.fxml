@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="769.0" style="-fx-background-color: #024059;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.menuJavaController">
+    <children>
+      <TableView fx:id="tableview" layoutX="292.0" layoutY="161.0" onMouseClicked="#handleTableViewMouseClicked" prefHeight="202.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="nomColumn" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="prenomColumn" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="numColumn" prefWidth="75.0" text="num" />
+            <TableColumn fx:id="adresseColumn" prefWidth="106.4000244140625" text="adresse" />
+            <TableColumn fx:id="emailColumn" prefWidth="131.199951171875" text="email" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="292.0" layoutY="114.0" />
+      <TextField fx:id="nompCol" layoutX="80.0" layoutY="149.0" />
+      <TextField fx:id="prenompCol" layoutX="80.0" layoutY="201.0" />
+      <TextField fx:id="numpCol" layoutX="80.0" layoutY="250.0" />
+      <TextField fx:id="emailpCol" layoutX="80.0" layoutY="351.0" />
+      <Button fx:id="button77" layoutX="111.0" layoutY="395.0" mnemonicParsing="false" onAction="#UpdatePassager" text="Modifier" />
+      <Button fx:id="btnA" layoutX="44.0" layoutY="395.0" mnemonicParsing="false" onAction="#ajouterPassager" text="Ajouter" />
+      <Button fx:id="btnD" layoutX="185.0" layoutY="395.0" mnemonicParsing="false" onAction="#DeletePassager" text="Supprimer" />
+      <TextField fx:id="adressepCol" layoutX="81.0" layoutY="298.0" />
+      <Button fx:id="btnPDF" layoutX="505.0" layoutY="377.0" mnemonicParsing="false" onAction="#handlePdfButtonAction" text="PDF" />
+      <ComboBox fx:id="comboBox" layoutX="604.0" layoutY="114.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

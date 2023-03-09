@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/AfficherCompte.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/AjoutcompteController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/SignInAdminController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/AjouterReview.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestpaiement/UpdatePM.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/TestbackController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/sms.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/SupprimerAssuranceController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestcovoiturage/selectcov.css</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestchauffeur/AfficherChauffeurController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestchauffeur/SignInChauffeur.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/ModifierAssuranceController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/AffichercompteController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/Services/ServiceReclamation.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/Testback.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestcovoiturage/selectcov.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestpassager/menuJavaController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/AjoutcompteController_admin.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestcovoiturage/SelectcovControllerBack.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestpassager/MenuuJavaController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/AfficherrecController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestchauffeur/AfficherChauffeur.fxml</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/Services/ServiceCovoiturage.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/AllController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/AfficherReviewController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/Services/PassagerService.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/sms.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/SignIn.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestcovoiturage/SelectcovController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestpassager/SignInPassagerController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/IMG/logofinal.png</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestchauffeur/SignInChauffeurController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestreclamationreview/AjouterReviewController.java</file>
+            <file>file:/C:/Users/sarra/Desktop/IntegrationJAVAFXAchrerf/IntegrationFinale/gestchauffeur/src/GUI/gestuserassurance/AjouterAssuranceController.java</file>
+        </group>
+    </open-files>
+</project-private>

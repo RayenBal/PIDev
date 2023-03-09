@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI2.AddPMController">
+   <children>
+      <TextField fx:id="txtid" layoutX="219.0" layoutY="98.0" />
+      <TextField fx:id="txtm" layoutX="220.0" layoutY="168.0" />
+      <TextField fx:id="txtPM" layoutX="219.0" layoutY="237.0" />
+      <Label layoutX="280.0" layoutY="74.0" text="id" />
+      <Label layoutX="280.0" layoutY="144.0" text="User_id" />
+      <Label layoutX="247.0" layoutY="211.0" prefHeight="18.0" prefWidth="165.0" text="Payment Methode" />
+      <Button fx:id="btnA" layoutX="259.0" layoutY="289.0" mnemonicParsing="false" onAction="#Add" prefHeight="26.0" prefWidth="62.0" text="Add" />
+      <Label fx:id="idErrorLabel" layoutX="219.0" layoutY="124.0" prefHeight="18.0" prefWidth="254.0" />
+      <Label fx:id="UIDeL" layoutX="220.0" layoutY="191.0" prefHeight="18.0" prefWidth="158.0" />
+      <Label fx:id="PMEL" layoutX="220.0" layoutY="263.0" prefHeight="18.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
